@@ -1,7 +1,7 @@
 // Navbar.js
 
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -18,30 +18,30 @@ const Header = () => {
           </a>
         </div>
         <div className="flex">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
           >
             Home
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/profile"
             className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
           >
             Profile
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/login"
             className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
           >
             Login
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/signup"
             className="text-black px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700"
           >
             Signup
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
